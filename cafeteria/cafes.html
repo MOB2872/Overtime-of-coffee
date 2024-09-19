@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafés - Coff_Esporte</title>
+    <meta name="description" content="Explore nossa seleção de cafés e comidas deliciosas na Coff_Esporte. Ideal para amantes de esportes e café.">
+    <meta name="keywords" content="cafés, comidas, Coff_Esporte, café e esportes">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html"><img src="imgs/coff.png" alt="Coff_Esporte Logo"></a></div>
+            <ul class="nav-images">
+                <li>
+                    <a href="index.html">
+                        <img src="imgs/home.png" alt="Home">
+                        <span class="tooltip">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="cafes.html">
+                        <img src="imgs/cafe.png" alt="Cafés">
+                        <span class="tooltip">Café</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="esporte.html">
+                        <img src="imgs/volei.png" alt="Esporte">
+                        <span class="tooltip">Vôlei</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="contato.html">
+                        <img src="imgs/contato.png" alt="Contato">
+                        <span class="tooltip">Contato</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="cafes">
+            <h1>Nosso Cardápio de Cafés</h1>
+            <p>Descubra nossa seleção de cafés especialmente preparados para energizar seu dia.</p>
+
+            <div class="swiper-container cafes-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="imgs/img2.jpg" alt="Café expresso em uma xícara branca">
+                        <h2>Expresso Jordan</h2>
+                        <p>Um café forte e concentrado para começar o seu dia com energia.</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="imgs/cafe3.jpg" alt="Café latte com espuma cremosa">
+                        <h2>Tiger Woods Coff</h2>
+                        <p>Uma combinação suave de café expresso com leite vaporizado e espuma cremosa.</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="imgs/img4.jpg" alt="Cappuccino com polvilho de cacau">
+                        <h2>Carolppuccino</h2>
+                        <p>Um café expresso coberto com espuma de leite e polvilhado com cacau.</p>
+                    </div>
+                </div>
+                <div class="swiper-pagination cafes-pagination"></div>
+            </div>
+
+            <div class="swiper-buttons">
+                <button class="swiper-button" onclick="cafesSwiper.slidePrev()">Anterior</button>
+                <button class="swiper-button" onclick="cafesSwiper.slideNext()">Próximo</button>
+            </div>
+        </section>
+
+        <section class="comidas">
+            <h1>Delícias para Acompanhar</h1>
+            <p>Acompanhe seu café com uma seleção de comidas saborosas.</p>
+
+            <div class="swiper-container comidas-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="imgs/comida1.jpg" alt="Croissant fresco e dourado">
+                        <h2>Croissant</h2>
+                        <p>Um croissant fresco e amanteigado, perfeito para acompanhar qualquer café.</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="imgs/comida2.png" alt="Bolo de chocolate com cobertura">
+                        <h2>Bolo de Chocolate</h2>
+                        <p>Delicie-se com nosso bolo de chocolate rico e úmido.</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="imgs/camida3.jpg" alt="Torrada com abacate e tomate">
+                        <h2>Torrada com Abacate</h2>
+                        <p>Torrada crocante com abacate cremoso e tomate fresco.</p>
+                    </div>
+                </div>
+                <div class="swiper-pagination comidas-pagination"></div>
+            </div>
+
+            <div class="swiper-buttons">
+                <button class="swiper-button" onclick="comidasSwiper.slidePrev()">Anterior</button>
+                <button class="swiper-button" onclick="comidasSwiper.slideNext()">Próximo</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Coff_Esporte. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

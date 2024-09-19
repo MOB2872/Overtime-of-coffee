@@ -1,0 +1,321 @@
+/* Estilos Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #472d30
+    
+}
+
+header {
+    background-color: #e26d5c;
+    padding: 20px 40px;
+}
+
+nav ul {
+    display: flex; /* Alinha os itens em linha */
+}
+
+nav ul li {
+    position: relative; /* Necessário para posicionar o tooltip */
+    margin: 0 15px; /* Ajuste a distância conforme necessário */
+}
+
+nav ul li img {
+    transition: filter 0.3s; /* Adiciona transição para o brilho */
+    max-width: 50px; /* Ajuste o tamanho da imagem conforme necessário */
+}
+
+nav ul li:hover img {
+    filter: brightness(1.2); /* Faz a imagem brilhar */
+}
+
+.tooltip {
+    display: none; /* Esconde o texto por padrão */
+    position: absolute;
+    top: 100%; /* Coloca o texto abaixo da imagem */
+    left: 50%;
+    transform: translateX(-50%); /* Centraliza o texto */
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+nav ul li:hover .tooltip {
+    display: block; /* Mostra o texto quando passar o mouse */
+}
+
+nav ul li a:hover img {
+    transform: scale(1.5); /* Aumenta o tamanho da imagem ao passar o mouse */
+    box-shadow: 0 0 10px rgba(255, 255, 0, 0.8); /* Brilho ao passar o mouse */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo img {
+    max-height: 150px; /* Ajuste a altura conforme necessário */
+    width: 150px; /* Mantém a proporção da imagem */
+    
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #472d30;
+}
+
+/* Página de Cafés */
+main {
+    padding: 20px;
+}
+
+.cafes, .comidas {
+    margin-bottom: 40px;
+}
+
+.cafes h1, .comidas h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Estilos do Carrossel */
+.swiper-container {
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #472d30;
+    padding: 20px;
+}
+
+.swiper-slide img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.swiper-slide h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.swiper-slide p {
+    font-size: 16px;
+    color: #ccc;
+}
+
+/* Estilizando a paginação */
+.swiper-pagination-bullet {
+    background: #ff6600;
+}
+
+/* Estilos dos Botões do Carrossel */
+.swiper-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.swiper-button {
+    background-color: #ffe1a8;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.swiper-button:hover {
+    background-color: #e67e22;
+}
+
+/* Estilos da Landing Page */
+.landing {
+    position: relative;
+    height: calc(100vh - 80px);
+    background-image: url('coff.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.text {
+    z-index: 2;
+    color: #ffe1a8;
+}
+
+.text h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.text p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #ffe1a8;
+}
+
+/* Estilizando os Botões "Criar Conta" e "Entrar" */
+.buttons {
+    display: flex;
+    justify-content: center; /* Centraliza os botões */
+    gap: 20px;
+}
+
+.buttons .btn {
+    padding: 10px 20px;
+    background-color: #e26d5c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.buttons .btn:hover {
+    background-color: #e26d5c;
+}
+
+/* Estilos de Login */
+.login-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 80px);
+    background-color: #472d30;
+}
+
+.login-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.login-form input {
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
+    transition: border 0.3s;
+}
+
+.login-form input:focus {
+    border: 2px solid transparent;
+    background-image: linear-gradient(90deg, #c9cba3, #ffe1a8);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.login-form button {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #e26d5c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.login-form button:hover {
+    background-color: #c9cba3;
+}
+
+/* Estilos do Footer */
+footer {
+    background-color: #1a1a1a;
+    padding: 20px 40px;
+    text-align: center;
+    color: #fff;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .text h1 {
+        font-size: 36px;
+    }
+
+    .text p {
+        font-size: 16px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .buttons .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.anton-regular {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+ 
+h1 {
+    font-family: 'Anton', sans-serif;
+}
+
+
+
+.nav, .buttons a {
+    font-family: 'Anton', sans-serif;
+}
