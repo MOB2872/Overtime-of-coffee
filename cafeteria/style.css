@@ -6,11 +6,14 @@
     font-family: 'Arial', sans-serif;
 }
 .caff{
-    margin-top: 20px;
+    margin-top: 15px;
     text-align: center;
-    filter: drop-shadow(0px 5px 10px #ee6063);
+    box-shadow: #e90509;
     opacity: 40%;
-   
+    position: relative;
+    margin-bottom: 40px;
+    border-radius: 80%;
+    z-index: 2;
 }
 
 body {
@@ -126,7 +129,7 @@ main {
 .swiper-container {
     width: 100%;
     height: auto;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .swiper-slide {
@@ -160,6 +163,7 @@ main {
 /* Estilizando a paginação */
 .swiper-pagination-bullet {
     background: #ff6600;
+   
 }
 
 /* Estilos dos Botões do Carrossel */
@@ -187,12 +191,13 @@ main {
 .landing {
     position: relative;
     height: calc(100vh - 80px);
-    background-image: url('coff.jpg');
+    background-image: url('imgs/coff.jpg'); /* Certifique-se de que o caminho da imagem esteja correto */
     background-size: cover;
     background-position: center;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    align-items: center; /* Centraliza todos os elementos */
+    justify-content: center; /* Centraliza verticalmente */
     text-align: center;
 }
 
@@ -200,27 +205,38 @@ main {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 200%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5); /* Camada escura para melhor contraste */
+    z-index: 1; /* Fica acima da imagem de fundo */
+    margin-top: 0px;
 }
 
 .text {
+    position: absolute; /* Para garantir que fique acima da sobreposição */
     z-index: 2;
     color: #ffe1a8;
-    position: absolute;
-    top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo do texto */
+    
 }
 
-.teto h1 {
-    font-size: 60px;
-    margin-bottom: 20px;
-}
-
-.text p {
-    font-size: 20px;
-    margin-bottom: 20px;
+.teto {
+    position: relative; /* Mantenha o teto acima dos outros elementos */
+    z-index: 4;
     color: #ffe1a8;
+    margin-top: 40px;
+    font-size: larger;
+    font-size: 35px;
+    filter: drop-shadow(0px 5px 10px #e4852d);
+}
+
+.text p, h2{
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #ffe1a8;
+    margin-top: 10px;
 }
 
 /* Estilizando os Botões "Criar Conta" e "Entrar" */
@@ -379,7 +395,10 @@ h1 {
     flex-wrap: wrap;
     gap: 20px;
 }
-
+.produto-container img{
+    width: 300px;
+    
+}
 .produto {
     background-color: #ffe1a8;
     border-radius: 10px;
@@ -404,7 +423,7 @@ h1 {
 .produto p {
     font-size: 16px;
     margin-bottom: 10px;
-    
+    color: #472d30;
 }
 
 .produto button {
