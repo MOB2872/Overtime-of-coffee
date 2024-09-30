@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Coff_Esporte</title>
+    <title>Página de Pagamento - Coff_Esporte</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -40,14 +39,38 @@
         </nav>
     </header>
 
-    <section class="login-section">
-        <h1>Crie sua conta</h1>
-        <form class="login-form">
-            <input type="text" placeholder="Usuário" required>
-            <input type="password" placeholder="Senha" required>
-            <button type="submit">Entrar</button>
-        </form>
-    </section>
+    <main>
+        <div class="payment-section">
+            <h1>Pagamento</h1>
+            <form class="payment-form">
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="endereco">Endereço</label>
+                <input type="text" id="endereco" name="endereco" required>
+
+                <label for="cidade">Cidade</label>
+                <input type="text" id="cidade" name="cidade" required>
+
+                <label for="estado">Estado</label>
+                <input type="text" id="estado" name="estado" required>
+
+                <label for="cep">CEP</label>
+                <input type="text" id="cep" name="cep" required>
+
+                <label for="cartao">Número do Cartão</label>
+                <input type="text" id="cartao" name="cartao" required>
+
+                <label for="validade">Data de Validade (MM/AA)</label>
+                <input type="text" id="validade" name="validade" required>
+
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" required>
+
+                <button type="submit">Finalizar Compra</button>
+            </form>
+        </div>
+    </main>
 
     <footer>
         <p>&copy; 2024 Coff_Esporte. Todos os direitos reservados.</p>
