@@ -122,7 +122,7 @@ main {
 .cafes h3, .comidas h3{
     font-size: 20px;
     color: #ffe1a8;
-    margin-left: 70px;
+    text-align: center;
 }
 
 /* Estilos do Carrossel */
