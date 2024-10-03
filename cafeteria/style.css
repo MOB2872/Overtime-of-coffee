@@ -9,9 +9,9 @@
     margin-top: 15px;
     text-align: center;
     box-shadow: #e90509;
-    opacity: 40%;
+    opacity: 70%;
     position: relative;
-    margin-bottom: 40px;
+    margin-bottom: 65px;
     border-radius: 80%;
     z-index: 2;
 }
@@ -222,19 +222,46 @@ main {
     
 }
 
+.ico {
+    position: absolute; 
+    right: -290px; 
+    top: -15%; /* Posiciona no centro vertical */
+    transform: translateY(-50%); 
+    z-index: 2; 
+    margin-left: 150px;
+}
+
+.ico-gif {
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    
+}
+
+
 .teto {
     position: relative; /* Mantenha o teto acima dos outros elementos */
     z-index: 4;
     color: #ffe1a8;
-    margin-top: 40px;
+    margin-top: 0px;
     font-size: larger;
     font-size: 35px;
-    filter: drop-shadow(0px 5px 10px #e4852d);
+    filter: drop-shadow(0px 5px 5px #ffe1a8);
+    margin-bottom: 400px;
 }
 
-.text p, h2{
+
+.text h2{
+    font-size: 40px;
+    margin-bottom: 60px;
+    color: #ffe1a8;
+    margin-top: 10px;
+}
+
+.text p{
     font-size: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 89px;
     color: #ffe1a8;
     margin-top: 10px;
 }
@@ -243,7 +270,7 @@ main {
 .buttons {
     display: flex;
     justify-content: center; /* Centraliza os botões */
-    gap: 20px;
+    gap: 120px;
 }
 
 .buttons .btn {
@@ -672,4 +699,12 @@ footer {
     padding: 20px 40px;
     text-align: center;
     color: #fff;
+}
+
+.landing {
+    background-image: url('imgs/fundo.png'); 
+    background-size: cover; /* Faz com que a imagem cubra toda a seção */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    position: relative; 
 }
