@@ -13,30 +13,30 @@
 <body>
     <header>
         <nav>
-            <div class="logo"><a href="index.html"><img src="imgs/coff.png" alt="Coff_Esporte Logo"></a></div>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="imgs/coff.png" alt="Logo da Coff_Esporte">
+                </a>
+            </div>
             <ul class="nav-images">
                 <li>
-                    <a href="index.html">
+                    <a href="index.html" aria-label="Home">
                         <img src="imgs/home.png" alt="Home">
-                        <span class="tooltip">Home</span>
                     </a>
                 </li>
                 <li>
-                    <a href="cafes.html">
+                    <a href="cafes.html" aria-label="Cafés">
                         <img src="imgs/cafe.png" alt="Cafés">
-                        <span class="tooltip">Café</span>
                     </a>
                 </li>
                 <li>
-                    <a href="esporte.html">
+                    <a href="esporte.html" aria-label="Esporte">
                         <img src="imgs/volei.png" alt="Esporte">
-                        <span class="tooltip">Esporte</span>
                     </a>
                 </li>
                 <li>
-                    <a href="contato.html">
+                    <a href="contato.html" aria-label="Contato">
                         <img src="imgs/contato.png" alt="Contato">
-                        <span class="tooltip">Contato</span>
                     </a>
                 </li>
             </ul>
@@ -70,8 +70,8 @@
             </div>
 
             <div class="swiper-buttons">
-                <button class="swiper-button" onclick="cafesSwiper.slidePrev()">Anterior</button>
-                <button class="swiper-button" onclick="cafesSwiper.slideNext()">Próximo</button>
+                <button class="swiper-button" onclick="cafesSwiper.slidePrev()" aria-label="Voltar">Anterior</button>
+                <button class="swiper-button" onclick="cafesSwiper.slideNext()" aria-label="Avançar">Próximo</button>
             </div>
         </section>
 
@@ -101,8 +101,8 @@
             </div>
 
             <div class="swiper-buttons">
-                <button class="swiper-button" onclick="comidasSwiper.slidePrev()">Anterior</button>
-                <button class="swiper-button" onclick="comidasSwiper.slideNext()">Próximo</button>
+                <button class="swiper-button" onclick="comidasSwiper.slidePrev()" aria-label="Voltar">Anterior</button>
+                <button class="swiper-button" onclick="comidasSwiper.slideNext()" aria-label="Avançar">Próximo</button>
             </div>
         </section>
     </main>

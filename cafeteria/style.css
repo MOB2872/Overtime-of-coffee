@@ -95,7 +95,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #472d30;
+    color: #472d30; /* Cor ao passar o mouse */
+    text-decoration: underline; /* Sublinha ao passar o mouse */
 }
 
 /* Página de Cafés */
@@ -125,6 +126,16 @@ main {
     text-align: center;
 }
 
+.cafes .swiper-slide,
+.comidas .swiper-slide {
+    transition: box-shadow 0.3s; /* Transição suave */
+}
+
+.cafes .swiper-slide:hover,
+.comidas .swiper-slide:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra ao passar o mouse */
+}
+
 /* Estilos do Carrossel */
 .swiper-container {
     width: 100%;
@@ -147,6 +158,11 @@ main {
     height: auto;
     border-radius: 8px;
     margin-bottom: 10px;
+    transition: transform 0.3s, filter 0.3s; 
+}
+.swiper-slide:hover img {
+    transform: scale(1.10); /* Aumento de tamanho */
+    filter: brightness(1.3); /* Aumenta o brilho */
 }
 
 .swiper-slide h2 {
@@ -247,7 +263,7 @@ main {
     margin-top: 0px;
     font-size: larger;
     font-size: 35px;
-    filter: drop-shadow(0px 5px 5px #ffe1a8);
+    filter: drop-shadow(0px 5px 5px #bc6c25);
     margin-bottom: 400px;
 }
 
@@ -293,14 +309,21 @@ main {
     align-items: center;
     justify-content: center;
     height: calc(100vh - 80px);
-    background-color: #472d30;
+    background-image: url('imgs/fundo3.png'); /* Caminho da imagem de fundo */
+    background-size: cover; /* Faz com que a imagem cubra toda a seção */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    color: #ffe1a8; /* Cor do texto para contraste */
 }
+
 
 .login-section h1 {
     font-size: 66px;
     margin-bottom: 20px;
     color: #ffe1a8;
+    filter: drop-shadow(0px 5px 5px #bc6c25);
 }
+
 
 .login-form {
     display: flex;
@@ -410,6 +433,16 @@ h1 {
     text-align: center;
     filter: drop-shadow(0px 5px 10px #bc4749);
 }
+
+.produto {
+    transition: transform 0.3s, box-shadow 0.3s; /* Transição suave */
+}
+
+.produto:hover {
+    transform: translateY(-5px); /* Eleva o produto levemente */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra ao passar o mouse */
+}
+
 
 .produtos h2 {
     font-size: 28px;
@@ -527,6 +560,11 @@ h1 {
 
 .novo-produto button:hover {
     background-color: #c9cba3;
+}
+
+.novo-produto:hover img {
+    transform: scale(1.05); /* Aumento de tamanho */
+    transition: transform 0.3s; /* Transição suave */
 }
 
 /* Estilos do Footer */
@@ -703,8 +741,8 @@ footer {
 
 .landing {
     background-image: url('imgs/fundo.png'); 
-    background-size: cover; /* Faz com que a imagem cubra toda a seção */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Não repete a imagem */
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
     position: relative; 
 }
