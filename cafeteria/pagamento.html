@@ -5,44 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Pagamento - Coff_Esporte</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="payment.css"> <!-- CSS adicional para o pagamento -->
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo"><a href="index.html"><img src="imgs/coff.png" alt="Coff_Esporte Logo"></a></div>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="imgs/coff.png" alt="Coff_Esporte Logo">
+                </a>
+            </div>
             <ul class="nav-images">
                 <li>
                     <a href="index.html">
                         <img src="imgs/home.png" alt="Home">
-                        <span class="tooltip">Home</span>
                     </a>
+                    <span class="tooltip">Home</span> <!-- Apenas o texto aqui -->
                 </li>
                 <li>
                     <a href="cafes.html">
                         <img src="imgs/cafe.png" alt="Cafés">
-                        <span class="tooltip">Café</span>
                     </a>
+                    <span class="tooltip">Café</span>
                 </li>
                 <li>
                     <a href="esporte.html">
                         <img src="imgs/volei.png" alt="Esporte">
-                        <span class="tooltip">Esporte</span>
                     </a>
+                    <span class="tooltip">Esporte</span>
                 </li>
                 <li>
                     <a href="contato.html">
                         <img src="imgs/contato.png" alt="Contato">
-                        <span class="tooltip">Contato</span>
                     </a>
+                    <span class="tooltip">Contato</span>
+                </li>
+                <li>
+                    <a href="pagamento.html">
+                        <img src="imgs/carrinho.png" alt="Pagamento" id="larger-img">
+                    </a>
+                    <span class="tooltip">Pagamento</span>
                 </li>
             </ul>
         </nav>
     </header>
-
+      
     <main>
         <div class="payment-section">
             <h1>Pagamento</h1>
-            <form class="payment-form">
+
+            <!-- Carrinho de Compras -->
+            <div class="cart" id="cart">
+                <h2>Carrinho de Compras</h2>
+                <div id="cart-items"></div>
+                <p>Total: <span id="total-price">R$0,00</span></p>
+            </div>
+
+            <!-- Formulário de Pagamento -->
+            <form class="payment-form" onsubmit="return handleSubmit(event);">
                 <label for="nome">Nome Completo</label>
                 <input type="text" id="nome" name="nome" required>
 
@@ -59,13 +79,13 @@
                 <input type="text" id="cep" name="cep" required>
 
                 <label for="cartao">Número do Cartão</label>
-                <input type="text" id="cartao" name="cartao" required>
+                <input type="password" id="cartao" name="cartao" required>
 
                 <label for="validade">Data de Validade (MM/AA)</label>
                 <input type="text" id="validade" name="validade" required>
 
                 <label for="cvv">CVV</label>
-                <input type="text" id="cvv" name="cvv" required>
+                <input type="password" id="cvv" name="cvv" required>
 
                 <button type="submit">Finalizar Compra</button>
             </form>
@@ -75,5 +95,7 @@
     <footer>
         <p>&copy; 2024 Coff_Esporte. Todos os direitos reservados.</p>
     </footer>
+
+    <script src="script.js"></script> <!-- JavaScript adicional -->
 </body>
 </html>
