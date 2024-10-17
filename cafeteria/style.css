@@ -780,3 +780,84 @@ footer {
     height: 30px;
     margin-left: 20px;
 }
+
+
+/* Garçom Container */
+#garcom-container {
+    position: relative;
+    width: 90%;
+    max-width: 1350px; /* Ajuste a largura máxima */
+    height: auto; /* Altura automática */
+    background-color: rgb(245, 146, 146);
+    filter: drop-shadow(0px 5px 5px #bc6c25);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    margin: 20px auto; /* Centralização */
+}
+
+#garcom {
+    width: 70%; /* Ajuste do tamanho da imagem */
+    height: auto;
+    margin-top: 10px;
+}
+
+#chat-box {
+    padding: 10px;
+    display: none;
+    background-color: #fafafa;
+    border-top: 2px solid #ccc;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-height: 300px;
+    overflow-y: auto;
+    transition: all 0.3s ease; /* Adiciona transição suave */
+}
+
+input[type="text"] {
+    width: calc(100% - 22px); /* Ajusta a largura considerando padding */
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #9e2a2b;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #fff3b0;
+}
+
+p {
+    margin: 10px 0;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    #garcom-container {
+        width: 95%; /* Largura maior em telas pequenas */
+    }
+
+    #garcom {
+        width: 80%; /* Ajusta o tamanho da imagem */
+    }
+}
+
+.visible {
+    display: block !important; /* Força a exibição */
+}
+
+#user-input, #send-button {
+    display: none; /* Oculta inicialmente */
+}
