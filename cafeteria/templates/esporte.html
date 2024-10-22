@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esporte - Coff_Esporte</title>
+    <meta name="description" content="Explore nosso ambiente esportivo temático. A Coff_Esporte é o lugar ideal para amantes de esportes e café.">
+    <meta name="keywords" content="esportes, Coff_Esporte, ambiente esportivo, café e esportes">
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="shortcut icon" href="static/imgs/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Kalnia+Glaze:wght@100..700&display=swap" rel="stylesheet">
+    <script src="carrinho.js" defer></script> <!-- Adicionando o JS do carrinho -->
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html"><img src="static/imgs/coff.png" alt="Coff_Esporte Logo"></a></div>
+            <ul class="nav-images">
+                <li>
+                    <a href="index.html">
+                        <img src="static/imgs/home.png" alt="Home">
+                        <span class="tooltip">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="cafes.html">
+                        <img src="static/imgs/cafe.png" alt="Cafés">
+                        <span class="tooltip">Café</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="esporte.html">
+                        <img src="static/imgs/volei.png" alt="Esporte">
+                        <span class="tooltip">Esporte</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="contato.html">
+                        <img src="static/imgs/contato.png" alt="Contato">
+                        <span class="tooltip">Contato</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="pagamento.html">
+                        <img src="static/imgs/carrinho.png" alt="Carrinho">
+                        <span class="tooltip">Carrinho</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="volei">
+            <section class="esporte">
+                <h1><big>Ambiente Esportivo</big></h1>
+                <p>Nosso espaço é projetado para refletir a paixão pelos esportes.</p>
+            </section>
+            <section class="produtos">
+                <h2>Destaques Expresos</h2>
+                <div class="produto-container">
+                    <div class="produto">
+                        <img src="static/imgs/produto2.png" alt="Bola de Vôlei">
+                        <h3>Bola de Vôlei</h3>
+                        <p>Preço: R$ 150,00</p>
+                        <button onclick="addToCart('Bola de Vôlei', 150)">Comprar</button>
+                    </div>
+                    <div class="produto">
+                        <img src="static/imgs/produto1.png" alt="Bola de Futbol">
+                        <h3>Bola de Futbol</h3>
+                        <p>Preço: R$ 80,00</p>
+                        <button onclick="addToCart('Bola de Futbol', 80)">Comprar</button>
+                    </div>
+                    <div class="produto">
+                        <img src="static/imgs/produto3.png" alt="Bola de Basquete">
+                        <h3>Bola de Basquete</h3>
+                        <p>Preço: R$ 200,00</p>
+                        <button onclick="addToCart('Bola de Basquete', 200)">Comprar</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <section class="novos-produtos">
+        <h2>Pos Café</h2>
+        <div class="novo-produto-container">
+            <div class="novo-produto">
+                <img src="static/imgs/produto4.png" alt="Bola de Handebol">
+                <h3>Bola de Handebol</h3>
+                <p>Preço: R$ 120,00</p>
+                <button onclick="addToCart('Bola de Handebol', 120)">Comprar</button>
+            </div>
+            <div class="novo-produto">
+                <img src="static/imgs/produto5.png" alt="Bola de Tênis">
+                <h3>Bola de Tênis</h3>
+                <p>Preço: R$ 20,00</p>
+                <button onclick="addToCart('Bola de Tênis', 20)">Comprar</button>
+            </div>
+            <div class="novo-produto">
+                <img src="static/imgs/produto6.png" alt="Bomba de bola">
+                <h3>Bomba de bola</h3>
+                <p>Preço: R$ 90,00</p>
+                <button onclick="addToCart('Bomba de bola', 90)">Comprar</button>
+            </div>
+            <div class="novo-produto">
+                <img src="static/imgs/produto8.png" alt="Produto 8">
+                <h3>Tênis basquete e volei</h3>
+                <p>Preço: R$ 274</p>
+                <button onclick="addToCart('Tênis', 274)">Comprar</button>
+
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Coff_Esporte. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
